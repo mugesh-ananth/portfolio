@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUGESH - Web Developer Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <span class="brand-text">MUGESH</span>
+                <span class="brand-subtitle">Web Developer</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#resume">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="particles" id="particles"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="animate__animated animate__fadeInDown">
+                        Hi, I'm <span class="highlight">MUGESH</span>
+                    </h1>
+                    <h2 class="animate__animated animate__fadeInUp animate__delay-1s">
+                        <span id="typing-text">Web Developer</span>
+                    </h2>
+                    <p class="hero-description animate__animated animate__fadeIn animate__delay-2s">
+                        Crafting beautiful, responsive, and user-friendly web experiences with modern technologies.
+                        Passionate about clean code and innovative solutions.
+                    </p>
+                    <div class="hero-buttons animate__animated animate__fadeInUp animate__delay-3s">
+                        <a href="#projects" class="btn-custom primary">View My Work</a>
+                        <a href="#contact" class="btn-custom secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image animate__animated animate__zoomIn animate__delay-2s">
+                    <div class="image-container">
+                        <img src="mypic.jpg" alt="Mugesh Profile" class="profile-hero">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <i class="fas fa-chevron-down fa-2x"></i>
+        </div>
+        <div class="floating-elements">
+            <div class="floating-element" style="top: 20%; left: 10%; animation-delay: 0s;"><i class="fab fa-html5"></i></div>
+            <div class="floating-element" style="top: 60%; left: 85%; animation-delay: 2s;"><i class="fab fa-css3-alt"></i></div>
+            <div class="floating-element" style="top: 80%; left: 15%; animation-delay: 4s;"><i class="fab fa-js-square"></i></div>
+            <div class="floating-element" style="top: 30%; left: 90%; animation-delay: 6s;"><i class="fab fa-react"></i></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-center mb-4 mb-lg-0">
+                    <img src="mypic.jpg" alt="Profile Picture" class="profile-img scale-in">
+                </div>
+                <div class="col-lg-8">
+                    <div class="about-content fade-in">
+                        <h2 class="slide-in-left mb-4">About Me</h2>
+                        <p class="slide-in-right">Hello! I'm a passionate Web Developer and recent undergraduate graduate, eager to kickstart my career in web development. As a fresher, I bring fresh perspectives and a strong foundation in modern web technologies.</p>
+                        <p class="slide-in-left">My journey into frontend development began during my college years, where I discovered my love for creating beautiful and functional user interfaces. I'm particularly excited about crafting responsive designs that work seamlessly across all devices.</p>
+                        <p class="slide-in-right">When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or learning about the latest trends in web development. I'm always ready to take on new challenges and collaborate on exciting projects.</p>
+                        <div class="mt-4 fade-in">
+                            <h5>Education</h5>
+                            <p>Bachelor's in Computer Science (Recent Graduate)</p>
+                            <h5>Interests</h5>
+                            <p>Responsive Web Development, JavaScript Frameworks</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="text-center mb-5" style="animation: fadeInUp 1s ease;">My Skills</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="skill-card">
+                        <i class="fab fa-html5 skill-icon"></i>
+                        <h4>HTML</h4>
+                        <p>Proficient in semantic HTML5 markup</p>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" role="progressbar" data-width="90" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <small class="text-muted mt-2">90%</small>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="skill-card">
+                        <i class="fab fa-css3-alt skill-icon"></i>
+                        <h4>CSS</h4>
+                        <p>Skilled in CSS3, Flexbox, and Grid layouts</p>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" data-width="85" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <small class="text-muted mt-2">85%</small>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="skill-card">
+                        <i class="fab fa-js-square skill-icon"></i>
+                        <h4>JavaScript</h4>
+                        <p>Strong foundation in ES6+ JavaScript</p>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning" role="progressbar" data-width="80" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <small class="text-muted mt-2">80%</small>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="skill-card">
+                        <i class="fab fa-bootstrap skill-icon"></i>
+                        <h4>Bootstrap</h4>
+                        <p>Experienced with Bootstrap 5 for responsive design</p>
+                        <div class="progress">
+                            <div class="progress-bar bg-info" role="progressbar" data-width="85" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <small class="text-muted mt-2">85%</small>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="skill-card">
+                        <i class="fas fa-database skill-icon"></i>
+                        <h4>MySQL</h4>
+                        <p>Knowledge of database design and SQL queries</p>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" role="progressbar" data-width="70" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <small class="text-muted mt-2">70%</small>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="skill-card">
+                        <i class="fab fa-react skill-icon"></i>
+                        <h4>React JS</h4>
+                        <p>Learning React for building dynamic UIs</p>
+                        <div class="progress">
+                            <div class="progress-bar bg-info" role="progressbar" data-width="65" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <small class="text-muted mt-2">65%</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="text-center mb-5" style="animation: fadeIn 1s ease;">My Projects</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="project-card">
+                        <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80" alt="Todo App" class="project-img w-100">
+                        <div class="project-content">
+                            <h4>Todo List Application</h4>
+                            <p>A responsive todo list app with add, edit, delete, and mark as complete functionalities. Features local storage to persist data.</p>
+                            <div class="tech-stack">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>Bootstrap</span>
+                            </div>
+                            <a href="#" class="btn btn-primary mt-3">View Project</a>
+                            <a href="#" class="btn btn-outline-primary mt-3 ms-2">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="project-card">
+                        <img src="https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Weather App" class="project-img w-100">
+                        <div class="project-content">
+                            <h4>Weather Dashboard</h4>
+                            <p>A weather application that displays current weather and 5-day forecast using a weather API. Includes location-based weather and search functionality.</p>
+                            <div class="tech-stack">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>API</span>
+                            </div>
+                            <a href="#" class="btn btn-primary mt-3">View Project</a>
+                            <a href="#" class="btn btn-outline-primary mt-3 ms-2">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="project-card">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2015&q=80" alt="Portfolio Website" class="project-img w-100">
+                        <div class="project-content">
+                            <h4>Personal Portfolio Website</h4>
+                            <p>A responsive portfolio website showcasing my skills and projects. Built with modern web technologies and Bootstrap for responsiveness.</p>
+                            <div class="tech-stack">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>Bootstrap</span>
+                            </div>
+                            <a href="#" class="btn btn-primary mt-3">View Project</a>
+                            <a href="#" class="btn btn-outline-primary mt-3 ms-2">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="project-card">
+                        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80" alt="Calculator" class="project-img w-100">
+                        <div class="project-content">
+                            <h4>Scientific Calculator</h4>
+                            <p>A fully functional scientific calculator with basic and advanced mathematical operations. Features a clean UI and keyboard support.</p>
+                            <div class="tech-stack">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <a href="#" class="btn btn-primary mt-3">View Project</a>
+                            <a href="#" class="btn btn-outline-primary mt-3 ms-2">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume-section">
+        <div class="container">
+            <h2 class="text-center mb-5" style="animation: fadeIn 1s ease;">My Resume</h2>
+            <p class="text-center" style="animation: fadeIn 1s ease 0.5s both;">Download my resume to learn more about my experience and qualifications.</p>
+            <div class="text-center">
+                <a href="mugeshresume.pdf" download class="btn btn-primary btn-lg" style="animation: slideInUp 1s ease 1s both;">Download Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="text-center mb-5" style="animation: fadeIn 1s ease;">Get In Touch</h2>
+            <div class="contact-info">
+                <i class="fas fa-envelope"></i>
+                <p>Feel free to reach out for collaborations or opportunities</p>
+            </div>
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+                    <div class="invalid-feedback">Please provide your full name.</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                    <div class="invalid-feedback">Please provide a valid email address.</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone" class="form-label">Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+                    <div class="invalid-feedback">Please provide a valid phone number.</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="5" placeholder="Enter your message" required></textarea>
+                    <div class="invalid-feedback">Please provide a message.</div>
+                </div>
+
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary btn-submit">Send Message</button>
+                </div>
+
+                <div id="successAlert" class="alert alert-success mt-3" role="alert">
+                    <i class="fas fa-check-circle"></i> Thank you! Your message has been sent successfully.
+                </div>
+                <div id="errorAlert" class="alert alert-danger mt-3" role="alert">
+                    <i class="fas fa-exclamation-triangle"></i> Please fill in all required fields correctly.
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h5>MUGESH</h5>
+                    <p>Web Developer passionate about creating amazing web experiences.</p>
+                    <div class="social-links">
+                        <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <h6>Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#resume">Resume</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h6>Contact Info</h6>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-envelope"></i> amugeshananth@gmail.com</li>
+                        <li><i class="fas fa-phone"></i> +91 9876543210</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Tenkasi, India</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2024 Mugesh. All rights reserved. | Made with <i class="fas fa-heart text-danger"></i> using HTML, CSS & JavaScript</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Initialize EmailJS with your public key
+        // Replace 'YOUR_PUBLIC_KEY' with your actual EmailJS public key
+        emailjs.init('ZlCfymrz7oRuKT28E');
+    </script>
+</body>
+</html>
